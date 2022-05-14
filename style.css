@@ -146,6 +146,9 @@ form {
   .botoes {
     width: 100%;
   }
+  .page-title {
+    text-align: center;
+  }
 }
 
 @media (max-width: 964px) {
@@ -157,6 +160,10 @@ form {
   }
   button,
   .button-jogar {
-    width: 250px;
+    width: 350px;
+  }
+  form {
+    display: block;
+    margin-top: 0;
   }
 }
