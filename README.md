@@ -1,1 +1,1 @@
-# super-trunfo-pokemon
+Super Trunfo Pokémon
