@@ -1,0 +1,180 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)),
+    url("http://3.bp.blogspot.com/-og6UiSqjMVY/Uz86rbCFZ_I/AAAAAAAAEVw/5OjxfqQuJuA/s1600/nblast_04-04_pokemonblast.jpg");
+  background-color: #000000;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-bottom: 20vh;
+}
+
+.container {
+  text-align: center;
+}
+
+.page-title {
+  color: #ffffff;
+  font-size: 42px;
+  text-align: center;
+}
+
+span {
+  background-color: #a3a30b;
+  padding: 0 5px;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
+button,
+.button-jogar {
+  padding: 0.8rem 1.5rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  width: 500px;
+}
+
+h2 {
+  color: white;
+}
+
+#carta-jogador,
+#carta-maquina {
+  width: 360px;
+  height: 500px;
+  overflow: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  background-size: 350px 300px;
+  background-repeat: no-repeat;
+  background-position-x: 5px;
+  background-position-y: 10px;
+  border-radius: 33px;
+}
+
+#carta-jogador h3 {
+  text-align: center;
+}
+
+.carta-imagem {
+  border: 1px solid black;
+  height: 100px;
+  margin: 10px;
+}
+
+.carta-imagem img {
+  width: 100%;
+  height: 100%;
+}
+
+.carta-status {
+  height: 160px;
+  margin: 2.5rem;
+  color: white;
+  z-index: 2;
+}
+
+.carta-status input {
+  margin: 10px;
+}
+
+.resultado-final {
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 1rem;
+  border: 2px solid black;
+  background-color: black;
+}
+
+.--spacing {
+  margin-left: 2.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.carta-subtitle {
+  z-index: 2;
+  position: absolute;
+  top: 16px;
+  left: 37px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+#cartas {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.carta-status {
+  text-align: initial;
+  margin-bottom: 2rem;
+}
+
+.vencedor {
+  background-color: #008000;
+}
+
+.perdedor {
+  background-color: #b10000;
+}
+
+.empate {
+  background-color: #a3a30b;
+}
+
+/* Trabalhando o problema de responsividade em outras telas com media queries */
+@media (max-width: 1200px) {
+  .wrapper {
+    display: block;
+  }
+  .botoes {
+    width: 100%;
+  }
+  .page-title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 964px) {
+  .botoes {
+    display: block;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  button,
+  .button-jogar {
+    width: 350px;
+  }
+  form {
+    display: block;
+    margin-top: 0;
+  }
+}
